@@ -5,6 +5,12 @@
     <artifactId>TeachingStyleAnalysis</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -20,6 +26,21 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
+        </dependency>
+        <dependency>
+	    <groupId>com.github.huaban</groupId>
+	    <artifactId>jieba-analysis</artifactId>
+	    <version>1f869680a8</version>
+	</dependency>
+        <dependency>
+            <groupId>com.hankcs</groupId>
+            <artifactId>hanlp</artifactId>
+            <version>portable-1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-math</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
     <properties>
