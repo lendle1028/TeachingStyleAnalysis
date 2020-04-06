@@ -33,10 +33,10 @@ public class NewMain {
         List<String> filePaths = new ArrayList<>();
         filePaths.add("從教學表徵與學生參與探究中小學數學補救教學之實踐與成效影響評估(2-3_3).docx");
         filePaths.add("表徵相關文章之一.docx");
-        File classroomFolder = new File("只有老師說的話167個txt檔");
-        for (File file : classroomFolder.listFiles()) {
-            filePaths.add(file.getAbsolutePath());
-        }
+//        File classroomFolder = new File("只有老師說的話167個txt檔");
+//        for (File file : classroomFolder.listFiles()) {
+//            filePaths.add(file.getAbsolutePath());
+//        }
         try (PrintWriter output = new PrintWriter(new OutputStreamWriter(new FileOutputStream("file1.json"), "utf-8"))) {
             for (String fileName : filePaths) {
                 if (fileName.endsWith("docx")) {

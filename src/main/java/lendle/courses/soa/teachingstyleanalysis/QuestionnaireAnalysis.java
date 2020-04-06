@@ -35,7 +35,7 @@ public class QuestionnaireAnalysis {
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
         List<Map<Integer, List<Term>>> columnTexts = new ArrayList<>();
-        TermExtractor termExtractor = new TermExtractor();
+        TermExtractor termExtractor = new TermExtractor(FallBackIDFPolicy.MIN);
         Gson gson = new Gson();
 
         List<Double> allTfidfValues = new ArrayList<>();
@@ -73,7 +73,7 @@ public class QuestionnaireAnalysis {
                         }
                     });
                     
-                    while(terms.size()>10){
+                    while(terms.size()>5){
                         terms.remove(terms.size()-1);
                     }
 //                    for(Term delete : toBeDeleted){
